@@ -1,9 +1,12 @@
 #' @rdname draw_venn
 draw_3d_venn <- function(x, n.sides, category.names, label,...){
-  category <- data.frame(x = c(2, -3.5, 7.5),
-                         y = c(8.5, -4.6, -4.6),
+  print('function called')
+  #category <- data.frame(x = c(2, -3.5, 7.5),
+  #                       y = c(8.5, -4.6, -4.6),
+  #                       label = category.names)
+  category <- data.frame(x = c(2, -2.5, 6.5), 
+                         y = c(8.5, -4, -4), 
                          label = category.names)
-
   region_data <- three_dimension_circle_regions(n.sides)
 
   counts <- three_dimension_region_values(x)
